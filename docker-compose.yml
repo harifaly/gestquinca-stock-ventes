@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:16
+    container_name: gestquinca-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-gestquinca}
+      POSTGRES_USER: ${POSTGRES_USER:-gestquinca}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-gestquinca_dev}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Les fichiers .sql de ./db sont exécutés dans l'ordre alphabétique (01, 02, 03, 04)
+      # uniquement à la première création du volume. Le dossier db/tests est ignoré.
+      - ./db:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:
