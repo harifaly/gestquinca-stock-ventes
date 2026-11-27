@@ -1,5 +1,5 @@
 ## Objectifs du projet
-Contexte et problème
+### Contexte et problème
 Les quincailleries gèrent un très grand nombre d'articles : outils, visserie, plomberie, électricité, peinture, matériaux de construction. Beaucoup d'entre elles suivent encore leur stock, leurs ventes et leurs commandes sur papier ou dans des tableurs. Cela entraîne :
   - des erreurs de stock et des ruptures découvertes trop tard ;
   - des commandes difficiles à retracer ;
