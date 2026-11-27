@@ -3,7 +3,9 @@
 Application web (Vue.js + FastAPI + PostgreSQL) pour gérer le catalogue, le stock, les ventes (comptant ou à crédit)
 et les paiements d'une quincaillerie. Projet final du cours « Application web et base de données relationnelle ».
 
-**Auteur(s) :** ANDRIAMIRINDRAMANANA Harifaly Lunard
+**Auteur(s) :** 
+- ANDRIAMIRINDRAMANANA Harifaly Lunard
+- RAKOTOARIMANANA Joy Sandra Hasina
 
 ## 1. Ce que fait l'application
 
