@@ -1,3 +1,12 @@
+## Objectifs du projet
+Contexte et problème
+Les quincailleries gèrent un très grand nombre d'articles : outils, visserie, plomberie, électricité, peinture, matériaux de construction. Beaucoup d'entre elles suivent encore leur stock, leurs ventes et leurs commandes sur papier ou dans des tableurs. Cela entraîne :
+  - des erreurs de stock et des ruptures découvertes trop tard ;
+  - des commandes difficiles à retracer ;
+  - une perte de temps pour le personnel.
+
+Donc l'objectif est de concevoir une base de données relationnelle et développer une application web qui centralise la gestion d'une quincaillerie.
+
 # GestQuinca - Gestion de stock et de commandes d'une quincaillerie
 
 Application web (Vue.js + FastAPI + PostgreSQL) pour gérer le catalogue, le stock, les ventes (comptant ou à crédit)
